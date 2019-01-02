@@ -59,7 +59,7 @@ public class Target : MonoBehaviour
     {
         Vector3 targetPos = transform.position;
 
-        targetPos += moveVec * 0.02f;
+        targetPos += moveVec * speed * Time.deltaTime;
 
         transform.position = targetPos;
 
